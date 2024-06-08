@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/Geist-Regular.ttf");
+  src: url("/fonts/Geist-Regular.ttf") format("truetype"),
+    url("/fonts/Geist-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/Geist-Medium.ttf");
+  src: url("/fonts/Geist-Medium.ttf") format("truetype"),
+    url("/fonts/Geist-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/Geist-SemiBold.ttf");
+  src: url("/fonts/Geist-SemiBold.ttf") format("truetype"),
+    url("/fonts/Geist-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+html {
+  font-size: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Geist", sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: #23282a;
+}
+
+header img {
+  height: 40px;
+}
+
+nav .nav-content {
+  display: flex;
+  align-items: center;
+}
+
+nav p {
+  margin: 0;
+  font-weight: 500;
+  color: #f4f4f6;
+}
+
+nav .secondaryCTA {
+  margin-left: 0.5rem;
+  text-decoration: none;
+  color: #f7ff58;
+  font-weight: 500;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.leftBlock {
+  padding: 10rem;
+  flex: 0 0 70%; /* Займає 60% ширини екрану */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.leftUpper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftBlockMain {
+  max-width: 600px;
+}
+
+.leftBlockMain h1 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.leftBlockMain .mainText {
+  font-weight: 400;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.registrationBlock {
+  display: flex;
+  align-items: center;
+}
+
+.registrationBlock input[type="email"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 1rem;
+  flex: 1;
+}
+
+.registrationBlock .primaryCTA {
+  padding: 0.5rem 1rem;
+  background-color: #23282b;
+  color: #f7ff58;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.leftBlockLogo img {
+  height: 200px; /* Встановлює висоту емблеми */
+  padding: 2rem;
+  object-position: top center;
+}
+
+.leftLower {
+  margin-top: 2rem;
+}
+
+.leftLower .subText {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.leftLower .hyperlink {
+  color: #9b6a6c;
+  text-decoration: none;
+}
+
+.rightImage {
+  flex: 0 0 35%; /* Займає 40% ширини екрану */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+  overflow: hidden;
+}
+
+.rightImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+}
